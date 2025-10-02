@@ -24,6 +24,7 @@ export default function RootLayout({
         <AuthProvider 
           projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID || ''}
           baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL || undefined}
+          baseStaticUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL ? 'https://static.local.descope.org/pages' : undefined}
           >
           {children}
         </AuthProvider>
