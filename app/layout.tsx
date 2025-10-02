@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   },
 };
 
+console.log('Project ID:', process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID);
+console.log('Base URL:', process.env.NEXT_PUBLIC_DESCOPE_BASE_URL);
 export default function RootLayout({
   children,
 }: {
