@@ -4,6 +4,7 @@ export default authMiddleware({
   publicRoutes: ['/sign-in', '/'],
   redirectUrl: '/sign-in',
   projectId: process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID,
+  baseUrl: process.env.NEXT_PUBLIC_DESCOPE_BASE_URL,
 });
 
 export const config = {

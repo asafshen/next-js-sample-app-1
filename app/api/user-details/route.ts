@@ -7,6 +7,7 @@ export async function GET() {
   try {
     const currSession = await session({
       projectId: process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID,
+      baseUrl: process.env.NEXT_PUBLIC_DESCOPE_BASE_URL,
     });
 
     if (!currSession) {
